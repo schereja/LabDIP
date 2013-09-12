@@ -9,5 +9,10 @@ package dip.lab2.student.solution1;
  * @author schereja
  */
 public interface TipCalculator {
+     public enum ServiceQuality{
+         GOOD,FAIR,POOR
+     }
      public abstract double getTip();
+     public ServiceQuality getServiceQuality();
+
 }

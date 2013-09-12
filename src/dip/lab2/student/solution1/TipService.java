@@ -10,7 +10,7 @@ package dip.lab2.student.solution1;
  */
 public class TipService {
     
-   public double getTip(TipCalculator t){
+   public double getTipForWork(TipCalculator t){
        return t.getTip();
    }
 }
