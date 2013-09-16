@@ -4,10 +4,12 @@
  */
 package dip.lab3.student.solution1;
 
+import java.awt.event.ActionEvent;
 import java.util.Scanner;
 import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFileChooser;
 
 /**
  *
@@ -20,6 +22,11 @@ public class FileInput implements MessageInput{
   
     @Override
     public void inputMessage() {
+        final JFileChooser fc = new JFileChooser();
+        //brings up open dialog, need to figure out to get that location to open
+        int returnVal = fc.showOpenDialog(fc);
+        
+        
           java.io.File file = new java.io.File(TEXT_FILE);
         Scanner scan = null;
         try {
@@ -31,7 +38,6 @@ public class FileInput implements MessageInput{
             msg += scan.nextLine() + "\n";
         }
     }
-
     @Override
     public String getMessage() {
         return msg;

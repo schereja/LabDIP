@@ -11,8 +11,9 @@ package dip.lab2.student.solution1;
 public class Startup {
    public static void main(String[] args){
        TipCalculator foodTip = new FoodServiceTipCalculator(TipCalculator.ServiceQuality.GOOD, 50);
-       TipCalculator baggageTip = new BaggageServiceTipCalculator(TipCalculator.ServiceQuality.GOOD, 5);
-      
+       TipCalculator baggageTip = new BaggageServiceTipCalculator(TipCalculator.ServiceQuality.POOR, 5);
+       System.out.println("Your food tip is: " + foodTip.getTip());
+       System.out.println("Your baggage tip is: " + baggageTip.getTip());
    }
     
 }

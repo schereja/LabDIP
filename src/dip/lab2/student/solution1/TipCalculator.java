@@ -13,6 +13,6 @@ public interface TipCalculator {
          GOOD,FAIR,POOR
      }
      public abstract double getTip();
-     public ServiceQuality getServiceQuality();
+     public abstract ServiceQuality getServiceQuality();
 
 }
