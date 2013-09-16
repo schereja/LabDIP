@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  *
  * @author schereja
  */
-public class FileInput implements Input{
+public class FileInput implements MessageInput{
     private String msg = "";
     //Setup as a static file right now to just do testing
     private String TEXT_FILE = "/Users/schereja/Dropbox/dreamweaver.txt";

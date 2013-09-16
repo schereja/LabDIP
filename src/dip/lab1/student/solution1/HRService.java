@@ -11,6 +11,6 @@ import javax.swing.JOptionPane;
  */
 public class HRService {
      public double getAnnualCompensationForEmployee(Employee e) {
-        return e.getWages();
+        return e.getWagesPerYear();
     }
 }

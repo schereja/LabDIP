@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author schereja
  */
-public class InputGUI implements Input{
+public class InputGUI implements MessageInput{
     private String msg = "";
     private String INPUT_DIALOG = "Enter message to send out:";
    

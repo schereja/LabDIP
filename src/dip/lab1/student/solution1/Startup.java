@@ -30,7 +30,7 @@ public class Startup {
         
         //Displays Compensation for each employee
         for(int i=0; i < employees.length; i++) {
-            System.out.println("Employee " + (i+1) + " compensation: " + hr.getAnnualCompensationForEmployee(employees[i]));
+            System.out.println("Employee " + (i+1) + " compensation: $" + hr.getAnnualCompensationForEmployee(employees[i]));
         }
         
     }

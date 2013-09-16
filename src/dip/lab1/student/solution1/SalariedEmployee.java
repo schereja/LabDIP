@@ -25,7 +25,7 @@ public class SalariedEmployee implements Employee {
     }
     
     @Override
-    public double getWages(){
+    public double getWagesPerYear(){
         return annualSalary;
     }
 

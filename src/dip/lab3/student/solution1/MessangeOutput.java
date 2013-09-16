@@ -8,7 +8,6 @@ package dip.lab3.student.solution1;
  *
  * @author schereja
  */
-public interface Input {
-   public void inputMessage();
-   public String getMessage();
+public interface MessangeOutput {
+    public void send(String message);
 }

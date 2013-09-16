@@ -9,10 +9,10 @@ package dip.lab3.student.solution1;
  * @author schereja
  */
 public class MessagingService {
-    private Input newInput;
-    private Output newOutput;
+    private MessageInput newInput;
+    private MessangeOutput newOutput;
     
-    public MessagingService(Input newInput, Output newOutput){
+    public MessagingService(MessageInput newInput, MessangeOutput newOutput){
         this.newInput = newInput;
         this.newOutput = newOutput;
     }

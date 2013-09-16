@@ -26,7 +26,7 @@ public class HourlyEmployee implements Employee {
         setTotalHrsForYear(totalHrsForYear);
     }
      @Override
-    public double getWages(){
+    public double getWagesPerYear(){
         return totalHrsForYear * hourlyRate;
     }
 

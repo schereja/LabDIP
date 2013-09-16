@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author schereja
  */
-public class ConsoleLogInput implements Input{
+public class ConsoleLogInput implements MessageInput{
     String message = "";
 
     @Override
