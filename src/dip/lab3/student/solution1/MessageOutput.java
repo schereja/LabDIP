@@ -8,6 +8,6 @@ package dip.lab3.student.solution1;
  *
  * @author schereja
  */
-public interface MessangeOutput {
+public interface MessageOutput {
     public void send(String message);
 }

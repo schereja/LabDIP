@@ -10,7 +10,7 @@ package dip.lab3.student.solution1;
  */
 public class Startup {
     public static void main(String[] args){
-    MessagingService newMsg = new MessagingService(new FileInput(), new FileOutput());
+    MessagingService newMsg = new MessagingService(new FileInput(), new OutputGUI());
    newMsg.inputMsg();
    newMsg.sendMsg();
     }

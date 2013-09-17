@@ -18,16 +18,18 @@ import javax.swing.JFileChooser;
 public class FileInput implements MessageInput{
     private String msg = "";
     //Setup as a static file right now to just do testing
-    private String TEXT_FILE = "/Users/schereja/Dropbox/dreamweaver.txt";
-  
+    //private String TEXT_FILE = "/Users/schereja/Dropbox/dreamweaver.txt";
+    private String fileName;
     @Override
     public void inputMessage() {
         final JFileChooser fc = new JFileChooser();
         //brings up open dialog, need to figure out to get that location to open
+        fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
         int returnVal = fc.showOpenDialog(fc);
+        //Gets absolute Path
+        fileName = fc.getSelectedFile().getAbsolutePath();
         
-        
-          java.io.File file = new java.io.File(TEXT_FILE);
+          java.io.File file = new java.io.File(fileName);
         Scanner scan = null;
         try {
             scan = new Scanner(file);

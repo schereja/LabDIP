@@ -8,7 +8,7 @@ package dip.lab3.student.solution1;
  *
  * @author schereja
  */
-public class ConsoleLogOutput implements MessangeOutput{
+public class ConsoleLogOutput implements MessageOutput{
 
     @Override
     public void send(String message) {

@@ -10,10 +10,11 @@ import javax.swing.JOptionPane;
  *
  * @author schereja
  */
-public class FileOutput implements MessangeOutput{
+public class FileOutput implements MessageOutput{
 
     @Override
     public void send(String message) {
+        //This could technically allow a user to output to a file, but unknown how to do that.
         JOptionPane.showMessageDialog(null, message);
     }
 

@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *
  * @author schereja
  */
-public class OutputGUI implements MessangeOutput{
+public class OutputGUI implements MessageOutput{
 
     @Override
     public void send(String message) {
